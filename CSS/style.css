@@ -1,4 +1,29 @@
-* {
-    margin: 0 auto;
-    text-align: center;
+header {
+    display: flex;
+    justify-content: space-between; /* h1과 nav를 양쪽으로 배치 */
+    align-items: center; /* 세로 정렬 */
+}
+
+nav ul {
+    display: flex;
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 50px 50px 50px 50px; /* li 간격 조정 */
+}
+
+nav ul li a{
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: black;;
+}
+
+nav ul li:hover{
+    background-color: black;
+}
+
+nav ul li:hover a{
+    color: white;
 }
