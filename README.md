@@ -5,11 +5,11 @@
 JS, img, CSS 폴더, index.html 생성
 
 2025-04-07 v0.0.2 <br>
-style.css, script.js 생성
+style.css, script.js 생성<br>
 메인 화면 타이틀, 네비 목록 생성
 
 2025-04-20 v 0.1.0 <br>
-header, footer 분리
-tab icon 추가
-header 로고 추가, nav 디테일 추가
+header, footer 분리<br>
+tab icon 추가<br>
+header 로고 추가, nav 디테일 추가<br>
 각종 nav html추가
