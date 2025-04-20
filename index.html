@@ -3,32 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>깃허브 저장용 홈페이지</title>
+    <link rel="icon" href="img/logo&icon/mataku.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/logo&icon/mataku.png" type="image/png">
     <link rel="stylesheet" href="CSS/style.css">
     <script src="JS/script.js"></script>
 </head>
-<body>
-    <header>
-        <h1>깃허브 저장용 홈페이지</h1>
-        <nav>
-            <ul>
-                <li><a href="./index.html">메인 화면</a></li>
-                <li><a href="">대학 과제 모음집</a></li>
-                <li><a href="./PSO2_NGS.html">PSO2 NGS</a></li>
-                <li><a href="">아 몰라</a></li>
-                <li><a href="">연락처</a></li>
-            </ul>
-        </nav>
-    </header>
-    <hr>
+<body onload="navi(), footer()">
+    <header id="header_nav"></header>
     <main>
         <section>
             <h2>메인 화면</h2>
                 <article>
                     <p>이곳은 깃허브 저장용 홈페이지입니다.</p>
+                    <hr>
+                </article>
+                <article>
+                    <h2>PSO2 NGS</h2>
+                    <p>PSO2 NGS에 관한 정보가 있는 페이지입니다.</p>
+                    <a href="./PSO2_NGS.html">PSO2 NGS 페이지로 이동</a>
+                    <hr>
+                </article>
+                <article>
+                    <h2>각종 URL 리스트</h2>
+                    <p>각종 URL을 모은 페이지입니다.</p>
+                    <a href="./url_list.html">URL 리스트 페이지로 이동</a>
+                    <hr>
+                </article>
+                <article>
+                    <h2>대학 과제모음집</h2>
+                    <p>대학 과제모음집입니다.</p>
+                    <a href="https://github.com/stars/Quraressimo/lists/university">Github 페이지로 이동</a>
+                    <hr>
+                </article>
+                <article>
+                    <h2>뭐하지</h2>
+                    <p>뭘 해야할까</p>
+                    <hr>
                 </article>
         </section>
     </main>
-    <footer></footer>
+    <footer id="footer"></footer>
 </body>
 </html>
