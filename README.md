@@ -1,4 +1,4 @@
-# Quraressimo.github.io
+# https://Quraressimo.github.io
 해당 홈페이지는 과제 복습 겸 만드는겁니다.
 
 2025-04-04 v0.0.1 <br>
@@ -13,3 +13,7 @@ header, footer 분리<br>
 tab icon 추가<br>
 header 로고 추가, nav 디테일 추가<br>
 각종 nav html추가
+
+2025-04-20 v0.1.1 <br>
+navigate.html 메인 로고 src 변경<br>
+readme 변경
