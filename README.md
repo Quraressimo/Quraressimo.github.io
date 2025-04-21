@@ -1,5 +1,6 @@
 # https://Quraressimo.github.io
 해당 홈페이지는 과제 복습 겸 만드는겁니다.
+해야할거: 모바일 최적화, 건프라 탭 생성
 
 2025-04-04 v0.0.1 <br>
 JS, img, CSS 폴더, index.html 생성
