@@ -54,6 +54,7 @@ nav ul li img {
     height: auto; /* 높이를 비율에 맞게 자동 조정 */
     object-fit: contain; /* 이미지 비율을 유지하며 컨테이너에 맞춤 */
     max-width: 100%; /* 컨테이너를 초과하지 않도록 제한 */
+    vertical-align: middle; /* 텍스트와 수직 정렬 */
 }
 
 nav ul li a{
@@ -99,6 +100,9 @@ section#quest ul{
 }
 
 /*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ footer ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+#footer{
+    border: none; /* 테두리 제거 */
+}
 
 footer {
     border-top: 5px solid cornflowerblue; /* 상단 테두리 추가 */
