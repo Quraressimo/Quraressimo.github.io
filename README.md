@@ -18,3 +18,8 @@ header 로고 추가, nav 디테일 추가<br>
 2025-04-20 v0.1.1 <br>
 navigate.html 메인 로고 src 변경<br>
 readme 변경
+
+2025-04-22 v0.1.2 <br>
+각 탭 아이콘 추가<br>
+건프라 탭 로고 변경<br>
+index, pso2 html 배경화면 추가

@@ -15,3 +15,11 @@ function footer() {
         })
         .catch(error => console.error('Error loading footer:', error));
 }
+
+function loadIcon() {
+    const icon = `
+        <link rel="icon" href="img/logo&icon/mataku.png" type="image/png">
+        <link rel="apple-touch-icon" href="img/logo&icon/mataku.png" type="image/png">
+    `;
+    document.head.innerHTML += icon;
+}
