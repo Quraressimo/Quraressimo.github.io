@@ -26,8 +26,38 @@
 
         .ani_info{display: none;}
 
-        .red {color: red;}
-        .orange {color: orange;}
+        #ninjaSlayer{
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 0px black, 0px 2px black, -2px 0px black, 0px -2px black;
+        }
+
+        #mono {
+            color: white;
+            text-shadow: 2px 0px orange, 0px 2px orange, -2px 0px orange, 0px -2px orange;
+        }
+
+        #mono > span {
+            text-shadow: 2px 0px aqua, 0px 2px aqua, -2px 0px aqua, 0px -2px aqua;
+        }
+
+        #medalist {
+            color: aqua;
+            font-weight: bold;
+        }
+
+        .red {
+            color: red;
+            text-shadow: 2px 0px black, 0px 2px black, -2px 0px black, 0px -2px black;
+        }
+        .orange {
+            color: orange;
+            text-shadow: 2px 0px black, 0px 2px black, -2px 0px black, 0px -2px black;
+        }
+        .yellow {
+            color: yellow;
+            text-shadow: 2px 0px black, 0px 2px black, -2px 0px black, 0px -2px black;    
+        }
     </style>
 </head>
 <body>
@@ -38,7 +68,7 @@
         <div class="ani_info">
             <h2>제목: <span>애니메이션 제목</span></h2>
             <h2>시청연령: <span>연령 제한</span></h2>
-            <h2>평점: ★★★☆☆</h2>
+            <h2>평점: ★☆☆☆☆</h2>
             <h2>특이사항: </h2>
             <h2>리뷰: 애니메이션에 대한 리뷰 내용이 여기에 들어갑니다.</h2>
             <p>애니메이션에 대한 자세한 설명이나 감상평을 여기에 작성합니다.</p>
@@ -47,19 +77,22 @@
     -->
     <div  id="title">
         <h1> 2025년 6월 이후 본 애니리스트 </h1>
-        <p>대부분 재획하면서 봐서 내용 뭐 모를 수도 있음</p>
+        <p>
+            대부분 재획하면서 봐서 내용 뭐 모를 수도 있음 <br>
+            별점은 라프텔 별점을 기준으로 0.5부터 5.0까지 있음
+        </p>
     </div>
     <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
     <div class="ani_list">
-        <h1 onclick="info_open_close(this)">1. 닌자 슬레이어 프롬 애니메이시욘</h1>
+        <h1 onclick="info_open_close(this)">1. <span id="ninjaSlayer">닌자 슬레이어 프롬 애니메이시욘</span></h1>
         <div class="ani_info">
-            <h2>제목: <span class="red">닌자 슬레이어 프롬 애니메이시욘</span></h2>
+            <h2>제목: 닌자 슬레이어 프롬 애니메이시욘</h2>
             <h2>시청연령: <span class="red">19세</span></h2>
             <h2>평점: ★★★☆☆</h2>
             <h2>특이사항: 초반은 2점, 후반은 4점, 13분이라는 닌자적 하야사 러닝타임!</h2>
             <h2>리뷰: 닌자- 코로스베시-!</h2>
             <p>
-                ◆2025-06-24 기준 대망의 첫 리뷰 <br>
+                ◆2025-06-24 기준 대망의 첫 리뷰- <br>
                 넥슨 암흑 메가코퍼레이션의 게이무, 메이플스토리의 사냥을 즐기기 위해, 전뇌 IRC공간에서 에니메이시욘을 서치하던 도중, 실제 <i>그윽한</i> 아트모스피어를 자아내는 것이 하나 있지않던가? <br>
                 닌자 슬레이어의 코믹스판은 주로 보아왔기에, 설레는 마음으로 애니메이시욘을 시청하였다. <br>
                 그러나 <b>나무아미타불!</b> 붓다도 노할만한 케지메 안건을 방불케 하는 실제 저렴한 퀄리티에 조용히 실금! 이 무슨 악덕! <br>
@@ -72,9 +105,9 @@
     </div>
     <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
     <div class="ani_list">
-        <h1 onclick="info_open_close(this)">2. 결혼한다는 게, 정말인가요</h1>
+        <h1 onclick="info_open_close(this)">2. <span class="orange">결혼</span>한다는 게, <span class="orange">정말</span>인가요</h1>
         <div class="ani_info">
-            <h2>제목: <span class="orange">결혼</span>한다는 게, <span class="orange">정말</span>인가요</h2>
+            <h2>제목: 결혼한다는 게, 정말인가요</h2>
             <h2>시청연령: <span class="orange">15세</span></h2>
             <h2>평점: ★★★☆☆</h2>
             <h2>특이사항: </h2>
@@ -89,7 +122,7 @@
     </div>
     <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
     <div class="ani_list">
-        <h1 onclick="info_open_close()">3. 모노</h1>
+        <h1 onclick="info_open_close(this)">3. <span id="mono">m<span>o</span>n<span>o</span></span></h1>
         <div class="ani_info">
             <h2>제목: <span>mono</span></h2>
             <h2>시청연령: <span class="orange">15세</span></h2>
@@ -101,21 +134,44 @@
     </div>
     <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
     <div class="ani_list">
-        <h1 onclick="info_open_close()">4. 지쿠악스</h1>
+        <h1 onclick="info_open_close(this)">4. 기동전사 건담 지쿠악스</h1>
         <div class="ani_info">
             <h2>제목: <span>기동전사 건담 GQuuuuuuX</span></h2>
             <h2>시청연령: <span>몰라</span></h2>
             <h2>평점: ★★★★☆</h2>
-            <h2>특이사항: </h2>
-            <h2>리뷰: 애니메이션에 대한 리뷰 내용이 여기에 들어갑니다.</h2>
-            <p>애니메이션에 대한 자세한 설명이나 감상평을 여기에 작성합니다.</p>
+            <h2>특이사항: 아마존 프라임 독점</h2>
+            <h2>리뷰: 돌고돌아 결국에는 퍼건</h2>
+            <p>
+                퍼스트 건담에서 지온이 전쟁에서 승리했다는 대체역사물로. 처음부터 샤아가 퍼건을 타고 나오는게 인상적인 작품이다. <br>
+                하지만 회차가 진행될수록, 주역기인 마츄, 지쿠악스의 비중이 줄면서 새로운 비우주세기를 바란 사람들에게는 실망스러웠다. <br>
+                반대로, 퍼건을 좋아하는 우주세기팬에게는 그야말로 노인정이라고 불릴정도로 우주세기의 오마주가 많기에 추천.
+            </p>
         </div>
     </div>
     <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
     <div class="ani_list">
-        <h1 onclick="info_open_close()">5. 메달리스트</h1>
+        <h1 onclick="info_open_close(this)">5. <span id="medalist">메달리스트</span></h1>
         <div class="ani_info">
-            <h2>제목: <span>mono</span></h2>
+            <h2>제목: <span>메달리스트</span></h2>
+            <h2>시청연령: <span class="yellow">12세</span></h2>
+            <h2>평점: ★★★★★</h2>
+            <h2>특이사항: 디즈니+ 독점, 13화</h2>
+            <h2>리뷰: 꿈을 위해 노력하는 모습은 싫어할 수가 없다.</h2>
+            <p>
+                초등학생때부터 시작해도 늦었다는 소리가 나오는 피겨스케이팅, 20살이 넘어서야 무대에 오른 코치와, 비교적 늦은 초등학교 5학년에 시작한 제자의 성장기. <br>
+                메달리스트는 그 두사람의 만남과, 그들이 노비스 대회에 참가할 때까지의 이야기를 다룬다. <br>
+                정석적인 스포츠물처럼, 성장하면서 라이벌의 등장과, 다양한 등장인물이 나온다. <br>
+                프로그램과 연기의 퀄리티는 스포츠물 중 역대 최고라고 말해도 될 정도로 좋고, 작화도 수준급으로 좋다. <br>
+                오프닝과 엔딩도 좋고, 꿈을 쫒는 이노리의 상황과 열정을 가사에 잘 담아냈다. <br>
+                2기가 나온다는데 엄청 기대가 된다.
+            </p>
+        </div>
+    </div>
+    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    <div class="ani_list">
+        <h1 onclick="info_open_close(this)">6. 소시민 시리즈 2기</h1>
+        <div class="ani_info">
+            <h2>제목: <span>소시민</span></h2>
             <h2>시청연령: <span>연령 제한</span></h2>
             <h2>평점: ★★★★★</h2>
             <h2>특이사항: </h2>
@@ -123,7 +179,30 @@
             <p>애니메이션에 대한 자세한 설명이나 감상평을 여기에 작성합니다.</p>
         </div>
     </div>
-
+    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    <div class="ani_list">
+        <h1 onclick="info_open_close(this)">7. 샹프론</h1>
+        <div class="ani_info">
+            <h2>제목: <span></span></h2>
+            <h2>시청연령: <span>연령 제한</span></h2>
+            <h2>평점: ★★★★☆ 4.5점</h2>
+            <h2>특이사항: </h2>
+            <h2>리뷰: 애니메이션에 대한 리뷰 내용이 여기에 들어갑니다.</h2>
+            <p>애니메이션에 대한 자세한 설명이나 감상평을 여기에 작성합니다.</p>
+        </div>
+    </div>
+    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    <div class="ani_list">
+        <h1 onclick="info_open_close(this)">8. 모브부터 시작하는 탐색 영웅담</h1>
+        <div class="ani_info">
+            <h2>제목: <span></span></h2>
+            <h2>시청연령: <span>15세</span></h2>
+            <h2>평점: ★★★☆☆</h2>
+            <h2>특이사항: </h2>
+            <h2>리뷰: 애니메이션에 대한 리뷰 내용이 여기에 들어갑니다.</h2>
+            <p>애니메이션에 대한 자세한 설명이나 감상평을 여기에 작성합니다.</p>
+        </div>
+    </div>
 
     <script>
         function info_open_close(btn) {
