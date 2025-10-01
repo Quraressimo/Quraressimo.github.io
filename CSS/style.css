@@ -13,6 +13,20 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 2.5rem; /* h1 태그의 폰트 크기 설정 */
+}
+
+h2 {
+    font-size: 2rem; /* h2 태그의 폰트 크기 설정 */
+}
+
+h4 {
+    font-size: 1.2rem; /* h4 태그의 폰트 크기 설정 */
+    font-weight: normal; /* h4 태그의 폰트 굵기를 보통으로 설정 */
+    margin-top: 10px; /* 위쪽 제목과의 간격 설정 */
+}
+
 header {
     width: 100%;
     height: 200px;
@@ -28,7 +42,55 @@ footer {
     height: 200px;
     background-color: #11181C /*Arsenic*/ ;
     
+}
+
+
+.info {
+    width: 100%;
+    height: 500px;
+
     display: flex;
     justify-content: center; /* 가로 중앙 정렬 */
     align-items: center;     /* 세로 중앙 정렬 */
+
+    div{
+        width: 50%;
+        text-align: center;
+        background-color: #212427 /*Dark Gray*/;
+    }
+}
+
+
+/* 목차 바로가기 스타일 */
+#shortcut {
+    /* position: fixed; 를 사용해 화면 스크롤과 상관없이 위치를 고정 */
+    position: fixed;
+    top: 50px; /* 화면 아래쪽에서 30px 떨어진 위치 */
+    left: 50px;  /* 화면 오른쪽에서 30px 떨어진 위치 */
+    
+    background-color: #101720;
+    border: 1px solid #ffffff;
+    border-radius: 10px; /* 모서리를 둥글게 처리 */
+    padding: 15px;
+    
+    display: none; /* 평소에는 보이지 않도록 숨김 */
+}
+
+/* JavaScript가 이 클래스를 추가하면 메뉴가 보이게 됨 */
+#shortcut.show {
+    display: block;
+}
+
+#shortcut ul {
+    list-style: none; /* li 태그의 기본 점 스타일 제거 */
+    padding: 0;
+    margin: 0;
+}
+
+#shortcut li {
+    margin-bottom: 10px; /* 각 메뉴 항목 사이의 간격 */
+}
+
+#shortcut li:last-child {
+    margin-bottom: 0; /* 마지막 메뉴 항목의 아래쪽 간격은 제거 */
 }

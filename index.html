@@ -11,22 +11,64 @@
 </head>
 
 <body>
+    <!-- 메인 목차 -->
     <header>
         <section>
-            메인페이지
-            포트폴리오
-            어바웃
+            <a href="index.html">메인페이지</a>
+            <a href="portfolio.html">포트폴리오</a>
+            <a href="About.html">어바웃</a>
             <a href="/useful_links_hub.html">유용한 정보들</a>
         </section>
     </header>
+
+    <!-- 목차 바로가기 메뉴 -->
+    <nav id="shortcut">
+        <ul>
+            <li><a href="#main">메인</a></li>
+            <li><a href="#portfolio">포트폴리오</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#useful">유용한 정보들</a></li>
+        </ul>
+    </nav>
+
     <main>
         <section>
-            <article>
+            <!-- 메인 홈페이지 설명 -->
+            <article class="info" id="main">
+                <div>
+                    <h1>해당 페이지에 대하여</h1>
+                    <h4>눈이 피로한 현대인을 위해 일단 다크 모드처럼 배경을 만들었습니다.</h4>
+                </div>
             </article>
+            <!-- 포트폴리오 목차 설명 -->
+            <article class="info" id="portfolio">
+                <div>
+                    <h1>포트폴리오</h1>
+                    <h4>게임, 웹 등 작성자가 학교에서 배운 내용으로 시간을 갈아넣은 무언가들입니다.</h4>
+                    <button>자세히 보러가기</button>
+                </div>
+            </article>
+            <!-- 어바웃 목차 설명 -->
+            <article class="info" id="about">
+                <div>
+                    <h1>About</h1>
+                    <h4>정확히 뭔진 모르겠습니다. 대부분 보면 뭐 없는거 같던데 그냥 채워봤습니다.</h4>
+                    <button>자세히 보러가기</button>
+                </div>                
+            </article>
+            <!-- 유용한 정보 목차 설명 -->
+            <article class="info" id="useful">
+                <div>
+                    <h1>유용한 정보들</h1>
+                    <h4>인터넷 돌아다니면서 좀 괜찮아보이는 것들 저장해놨습니다.</h4>
+                    <button>자세히 보러가기</button>
+                </div>                
+            </article>
+
         </section>
     </main>
     <footer>
-        Github | X |  | | | 뒷문 - 내취향 그득그득한것들로 채우기  <br>
+        <a href="">Github</a> | <a href=""> X </a> |  | | | <a href="ani_list.html">뒷문 - 내취향 그득그득한것들로 채우기</a>  <br>
         @2025-10-01
     </footer>
 </body>
