@@ -1,1 +1,34 @@
-dd
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body {
+    color: #ffffff;
+    background-color: #212A37 /*Oxford Blue*/;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background-color: #101720 /*Smoky Black*/ ;
+
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center;     /* 세로 중앙 정렬 */
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #11181C /*Arsenic*/ ;
+    
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center;     /* 세로 중앙 정렬 */
+}
