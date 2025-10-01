@@ -11,6 +11,7 @@
         }
 
         body {
+            width: 90%;
             color: #ffffff;
             background-color: #212A37 /*Oxford Blue*/;
         }
@@ -27,22 +28,21 @@
             text-decoration: none;
         }
 
-        .useful_links {
+        .useful_links_tweet {
             text-align: center;
+
+            article{
+                padding: 50px;
+                display: inline-block;
+                text-align: left;
+            }
         }
 
-        .useful_links article{
-            padding: 50px;
-            display: inline-block;
-            text-align: left;
-        }
 
         .Embed_tweet {
-            display: flex;
-            flex-direction: row;      /* 가로 배치 */
-            justify-content: center;  /* 가운데 정렬 */
-            align-items: flex-start;  /* 위쪽 정렬 */
-            gap: 20px;                /* 요소 사이 간격 */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));    /* 각 항목의 최소 너비를 500px로 하고, 공간이 남으면 꽉 채우도록 자동 배치합니다. */
+            gap: 20px;  /* 요소 사이 간격 */
 
             article{
                 border: 3px solid #ffffff; /* 두께, 스타일, 색상 순서 */
@@ -53,7 +53,10 @@
     </style>
 </head>
 <body>
-    <section class="useful_links">
+
+    <h1>트위터 관련 모음집</h1>
+
+    <section class="useful_links_tweet">
         <article>
             <h3>트윗 Embed 사이트</h3>
             <a href="https://publish.twitter.com/#">https://publish.twitter.com/#</a> 
@@ -73,8 +76,30 @@
             <h3>하얀색을 대신할 일본식 하얀 계열 색</h3>
             <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Japanese colours you can use instead of <a href="https://twitter.com/hashtag/ffffff?src=hash&amp;ref_src=twsrc%5Etfw">#ffffff</a> for your UI design. <a href="https://t.co/LLzeFE1Ion">pic.twitter.com/LLzeFE1Ion</a></p>&mdash; UI/UX Savior (@UiSavior) <a href="https://twitter.com/UiSavior/status/1972327512039715296?ref_src=twsrc%5Etfw">September 28, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </article>
+        <article>
+            <h3>코드 Ai판독기</h3>
+            <blockquote class="twitter-tweet" data-theme="dark"><p lang="ja" dir="ltr">生成AIで書かれたコードかどうかを95%の精度で検知するサービスらしい。現時点ではTypeScriptとPythonに対応している模様。 / “AI Code Detector by Span” <a href="https://t.co/RLO12YbX6U">https://t.co/RLO12YbX6U</a></p>&mdash; matsuu (@matsuu) <a href="https://twitter.com/matsuu/status/1969797285833064803?ref_src=twsrc%5Etfw">September 21, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </article>
+        <article>
+            <h3>픽시브 비공개 작품 아는 법</h3>
+            <blockquote class="twitter-tweet" data-theme="dark"><p lang="ja" dir="ltr">開発者ツールとかで HTML 覗くと、作品コードの数字だけは内部に残っているので、それでリンクツイートを探して作者をたどるという裏技があります <a href="https://t.co/8tZLwYzfhV">https://t.co/8tZLwYzfhV</a></p>&mdash; かずえもん (@kazuemon_0602) <a href="https://twitter.com/kazuemon_0602/status/1969290633731797319?ref_src=twsrc%5Etfw">September 20, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </article>
+        <article>
+            <h3>부부별곡 시청 방법</h3>
+            <blockquote class="twitter-tweet" data-theme="dark"><p lang="ko" dir="ltr">전체를 다 올리는 것은 역시 문제가 될 것 같아,<br>무료로 보는 법까지만 공유하겠습니다.<br><br>국립중앙도서관 지하2층 디지털자료실,<br>&#39;미디어자료이용석&#39;에서 바탕화면에 있는 검색창에 &#39;부부별곡&#39;을 검색하면 됩니다.<br><br>입장부터 예약제이니 예약필수<br><br>국립세종도서관도 있다는데 확인 못해봤어요. <a href="https://t.co/rKEmqGQnno">pic.twitter.com/rKEmqGQnno</a></p>&mdash; 뇨하(ニョハ)🍀BOOTH通販中 (@Nyoha_Nyoha) <a href="https://twitter.com/Nyoha_Nyoha/status/1668816714929434626?ref_src=twsrc%5Etfw">June 14, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </article>
     </section>
     <hr>
+
+<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ   -->
+
+    <h1>유용한 사이트 모음집</h1>
+
+    <section class="useful_links">
+        <h3>Ai 코드 판독기</h3>
+        <a href="https://code-detector.ai/">https://code-detector.ai/</a>
+    </section>
+    
     
 </body>
 </html>
