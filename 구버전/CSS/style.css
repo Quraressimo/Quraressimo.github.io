@@ -1,0 +1,126 @@
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ default ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ header ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+header {
+    width: 100%;
+    height: 150px;
+    border-bottom: 5px solid cornflowerblue; /* 하단 테두리 추가 */
+    display: flex;
+    justify-content: space-between; /* h1과 nav를 양쪽으로 배치 */
+    background-color: rgba(255, 255, 255, 0.5); /* 배경색을 반투명하게 설정 */
+}
+
+.logo{
+    width: 400px; /* 로고의 너비를 설정 */
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    height: 100%;
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    margin: 0 auto; 
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 250px; /* 각 메뉴의 너비를 설정 */
+    text-align: center;
+    line-height: 150px;/* 수직 중앙 정렬을 위해 line-height 설정 */
+    border-bottom: transparent; 
+    transition: border-color 0.5s; /* 테두리 색상 변경 시 애니메이션 효과 추가 */
+}
+
+nav ul li:hover{
+    background-color: aliceblue; /* 배경색을 변경 */
+    border-bottom: 15px solid cornflowerblue; /* 하단 테두리 색상 변경 */
+    box-shadow: 0 0 15px rgba(180, 218, 252, 0.8); /* 그림자 효과 추가 */
+}
+
+nav ul li img {
+    width: 100%;
+    height: auto; /* 높이를 비율에 맞게 자동 조정 */
+    object-fit: contain; /* 이미지 비율을 유지하며 컨테이너에 맞춤 */
+    max-width: 100%; /* 컨테이너를 초과하지 않도록 제한 */
+    vertical-align: middle; /* 텍스트와 수직 정렬 */
+}
+
+nav ul li a{
+    padding: 0px 20px 0px 20px; /* 좌우 여백 추가 */
+    display: block;
+    border-right: 3px solid cornflowerblue; /* 오른쪽 테두리 추가 */
+    color: black;
+    text-decoration: none; /* 링크 밑줄 제거 */
+    font-size: 18pt;
+    text-align: center;
+}
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ main ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+hr {
+    border: 0; /* 기본 테두리 제거 */
+    height: 1px; /* 높이 설정 */
+    background-color: cornflowerblue; /* 배경색 설정 */
+}
+
+fieldset {
+    border: 2px solid cornflowerblue; /* 테두리 두께와 색상 설정 */
+    border-radius: 5px; /* 테두리 모서리를 둥글게 설정 (선택 사항) */
+}
+
+section {
+    display: inline-block; /* 섹션을 인라인 블록으로 설정 */
+    border: 3px solid cornflowerblue;
+    border-radius: 20px; /* 테두리 모서리를 둥글게 설정*/
+    margin: 20px;
+    padding: 15px;
+    width: 40%;
+    vertical-align: top; /* 상단 정렬 */
+}
+
+section#quest{
+    width: fit-content;
+}
+
+section#quest ul{
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    margin: 0 auto; 
+    padding: 0;
+}
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ footer ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+#footer{
+    border: none; /* 테두리 제거 */
+}
+
+footer {
+    border-top: 5px solid cornflowerblue; /* 상단 테두리 추가 */
+    position: fixed; /* 고정 위치 설정 임시*/
+    bottom: 0; /* 화면 하단에 위치 임시*/
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* 배경색을 반투명하게 설정 */
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 0; /* 상하 여백 추가 */
+    color: black; /* 글자 색상 설정 */
+}
+
+footer p .github-logo {
+    width: 20px; /* 로고의 너비를 설정 */
+    height: auto; /* 높이를 비율에 맞게 자동 조정 */
+    vertical-align: middle; /* 텍스트와 수직 정렬 */
+}
