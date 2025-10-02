@@ -1,6 +1,5 @@
 // 페이지의 모든 콘텐츠가 로드된 후 스크립트를 실행
 document.addEventListener('DOMContentLoaded', function () {
-
     // HTML에서 id가 'caution'인 요소를 찾아서 변수에 저장
     const caution = document.getElementById('caution');
 
@@ -10,8 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         caution.classList.add('hidden');
     }, 1000); // (시간을 바꾸고 싶으면 이 숫자를 조절)
 
-
-    // --- 기존 목차 바로가기 스크립트 ---
+    // --- 목차 바로가기 스크립트 ---
     // HTML에서 id가 'shortcut'인 요소를 찾아서 변수에 저장
     const shortcut = document.getElementById('shortcut');
 
