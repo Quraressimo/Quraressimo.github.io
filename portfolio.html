@@ -3,15 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>포트폴리오</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style_port.css">
 </head>
 <body>
-    시간을 갈아 넣은 무언가들입니다.
+    <!-- 메인 header 목차 -->
+    <header>
+        <!-- 메인 사이트 제목 텍스트 -->
+        <section>
+            <a href="index.html"><h2>포폴 저장 어쩌구용 홈피</h2></a>            
+        </section>
+        <!-- 메인 header 네비게이션 -->
+        <section id="nav">
+            <a href="index.html">메인페이지</a>
+            <a href="portfolio.html">포트폴리오</a>
+            <a href="About.html">어바웃</a>
+            <a href="/useful_links_hub.html">유용한 정보들</a>
+        </section>
+        <!-- 목차 바로가기 메뉴 -->
+        <nav id="shortcut">
+            <ul>
+                <li><a href="#main">Info</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#useful">Useful Links</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <section>
-            <article id="game"></article>
+            <div id="hello">
+                안녕! 포트폴리오에 오신 것을 환영합니다.
+            </div>
+        </section>
+        <section id="works">
+            <article id="game">
+                <div class="project" id="2025_house">
+                    <span>
+                        <img src="../Quraressimo.github.io/" alt="">
+                    </span>
+                    <span>
+                        <h3>집만든거</h3>
+                        <span>설명</span>
+                    </span>
+                </div>
+                <div>중간과제한거</div>
+            </article>
             <article id="web"></article>
         </section>
     </main>
