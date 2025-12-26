@@ -1,0 +1,28 @@
+#works {
+    width: 100%;
+    text-align: center;
+    border: 5px solid black;
+}
+
+.projects {
+    display: flex; /* Flexbox를 사용해 자식 요소를 가로로 배치 */
+    align-items: center; /* 이미지와 텍스트를 세로로 중앙 정렬 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    width: 70%;
+    border: 6px solid green;
+    
+}
+
+.gallary {
+    width: 50%;
+}
+
+.gallary img {
+    width: 100%;
+    height: auto; /* 비율 유지 */
+    display: block; /* 이미지 아래 여백 제거 */
+}
+
+.texts {
+    text-align: left;
+}
